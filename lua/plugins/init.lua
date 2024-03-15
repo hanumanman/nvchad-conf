@@ -6,17 +6,17 @@ return {
 		end,
 	},
 
-	{
-		"nvim-tree/nvim-tree.lua",
-		opts = {
-			git = { enable = true },
-		},
-	},
+	-- {
+	-- 	"nvim-tree/nvim-tree.lua",
+	-- 	opts = {
+	-- 		git = { enable = true },
+	-- 	},
+	-- },
 
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
-			ensure_installed = { "html", "javascript", "css", "fish", "typescript", "tsx" },
+			ensure_installed = { "html", "javascript", "css", "fish", "typescript", "tsx", "vim", "lua", "vimdoc" },
 			textobjects = {
 				select = {
 					enable = true,
@@ -37,6 +37,21 @@ return {
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",
 			"windwp/nvim-ts-autotag",
+		},
+	},
+
+	{
+		"williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"html-lsp",
+				"prettierd",
+				"typescript-language-server",
+				"eslint-lsp",
+				"tailwindcss-language-server",
+				"stylua",
+				"lua-language-server",
+			},
 		},
 	},
 }
