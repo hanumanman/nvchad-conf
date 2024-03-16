@@ -6,12 +6,12 @@ return {
 		end,
 	},
 
-	-- {
-	-- 	"nvim-tree/nvim-tree.lua",
-	-- 	opts = {
-	-- 		git = { enable = true },
-	-- 	},
-	-- },
+	{
+		"nvim-tree/nvim-tree.lua",
+		opts = {
+			git = { enable = true },
+		},
+	},
 
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -32,7 +32,7 @@ return {
 					},
 				},
 			},
-			-- autotag = { enable = true },
+			autotag = { enable = true },
 		},
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",

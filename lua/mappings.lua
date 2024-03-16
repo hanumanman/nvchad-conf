@@ -19,6 +19,7 @@ map("n", "<leader>gg", function()
 	})
 end, { desc = "Open Lazygit in float terminal" })
 
+map("n", "<leader>fk", ":Telescope keymaps <cr>", { desc = "Telescope Find all keymaps" })
 -- disable default mappings
 local nomap = vim.keymap.del
 nomap("t", "<ESC>")
