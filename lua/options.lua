@@ -1,8 +1,8 @@
 require("nvchad.options")
 
--- add yours here!
-
+vim.o.cursorlineopt = "both"
 vim.wo.relativenumber = true
+-- Highlight on yank, duration = 50ms
 vim.cmd([[
 augroup highlight_yank
     autocmd!

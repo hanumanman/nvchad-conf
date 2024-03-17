@@ -32,6 +32,6 @@ return {
 		},
 	},
 
-	-- Underline current word under cursor
+	-- -- Underline current word under cursor
 	{ "echasnovski/mini.cursorword", version = false,  event = "VeryLazy" , opts = {}},
 }
