@@ -8,9 +8,27 @@ M.ui = {
 	},
 	nvdash = {
 		load_on_startup = true,
-		header = { "                                " },
+		header = {
+			"           ",
+			"           ",
+			"           ",
+			"           ",
+			"           ",
+			" ⟋|､       ",
+			"(°､ ｡ 7    ",
+			"|､  ~ヽ    ",
+			"じしf_,)〳 ",
+		},
+		buttons = {
+			{ "  Find files", "", "Telescope find_files" },
+			{ "󰔟  Recent files", "", "Telescope oldfiles" },
+			{ "󱔏  Find by words", "", "Telescope live_grep" },
+		},
 	},
-	cheatsheet = { theme = "simple" }, -- simple/grid
+	hl_override = {
+		NvDashAscii = { bg = "NONE", fg = "yellow" },
+		NvDashButtons = { bg = "NONE", fg = "red" },
+	},
 	term = {
 		-- hl = "Normal:term,WinSeparator:WinSeparator",
 		float = {
