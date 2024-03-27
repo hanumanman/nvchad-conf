@@ -23,6 +23,9 @@ end, { desc = "Open Lazygit in float terminal" })
 
 map("n", "<leader>fk", ":Telescope keymaps <cr>", { desc = "Telescope Find all keymaps" })
 map("n", "<leader>fd", ":Telescope diagnostics <cr>", { desc = "Telescope Find all diagnostics" })
+map("n", "<leader>ti", ":TSToolsAddMissingImports <cr>", { desc = "Add all missing imports" })
+map("n", "<leader>tu", ":TSToolsRemoveUnusedImports  <cr>", { desc = "Remove all unused imports" })
+map("n", "<leader>tr", ":TSToolsRenameFile  <cr>", { desc = "Rename current file and apply changes to connected files" })
 -- disable default mappings
 local nomap = vim.keymap.del
 -- pressing esc in terminal mode doesnt close the terminal (mostly to use lazygit)
